@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Quiz</title>
+    <link rel="stylesheet" href="css/bs/css/bootstrap.min.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="startScreen">
+            <div class="col-md-12 text-center pt-5">
+                <h1>JavaScript Fundamentals Quiz</h1>
+                <p>Click on the button to start the quiz</p>
+                <button id="startBtn" class="btn btn-primary">Start Quiz</button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="d-none">
+            <div class="container-fluid">
+                <div class="clearfix mt-3">
+                    <div class="float-left">
+                        <h3 class="btn btn-secondary view-highscores">View Highscores</h3>
+                    </div>
+                    <div class="float-right">
+                        <h3>Time: <span id="timer">60</span></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mx-auto">
+                        <h3 id="question" class="pl-1 mb-3">-------------------------------</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button id="btn1" class="btn btn-primary btn-block text-left answerOption"></button>
+                                <button id="btn2" class="btn btn-primary btn-block text-left answerOption"></button>
+                                <button id="btn3" class="btn btn-primary btn-block text-left answerOption"></button>
+                                <button id="btn4" class="btn btn-primary btn-block text-left answerOption"></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <h4 class="feedback"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gamerOver" class="d-none">
+            <div class="row">
+                <div class="col-md-12 text-center pt-5">
+                    <h1>Game Over</h1>
+                    <p id="currentScore"></p>
+                    <p>Enter your initials</p>
+                    <input type="text" id="initials" placeholder="Enter your initials">
+                    <button id="submitBtn" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="highscores" class="d-none">
+            <div class="row">
+                <div class="col-md-12 text-center pt-5">
+                    <h1>Highscores</h1>
+                    <div id="highScoreDisplay"></div>
+                    <button id="goBackBtn" class="btn btn-primary">Go Back</button>
+                    <button id="clearBtn" class="btn btn-primary">Clear Highscores</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
